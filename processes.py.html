@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>processes.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+processes.py</font>
+</center></td></tr></table>
+<pre><span class="s0">process = [</span><span class="s1">&quot;service strategy&quot;</span><span class="s2">, </span><span class="s1">&quot;service design&quot;</span><span class="s2">, </span><span class="s1">&quot;service transition&quot;</span><span class="s2">, </span><span class="s1">&quot;service operations&quot;</span><span class="s2">, </span><span class="s1">&quot;continual service management&quot;</span><span class="s0">]</span>
+
+<span class="s0">service_strategy = [</span><span class="s1">&quot;strategy generation&quot;</span><span class="s2">, </span><span class="s1">&quot;demand management&quot;</span><span class="s2">, </span><span class="s1">&quot;service portfolio management&quot;</span><span class="s2">, </span><span class="s1">&quot;financial management&quot;</span><span class="s0">]</span>
+<span class="s0">service_design = [</span><span class="s1">&quot;service catalog management&quot;</span><span class="s2">, </span><span class="s1">&quot;service level management&quot;</span><span class="s2">, </span><span class="s1">&quot;capacity management&quot;</span><span class="s2">, </span><span class="s1">&quot;availability management&quot;</span><span class="s2">, </span><span class="s1">&quot;service continuity management&quot;</span><span class="s2">, </span><span class="s1">&quot;information security management&quot;</span><span class="s2">, </span><span class="s1">&quot;supply management&quot;</span><span class="s0">]</span>
+<span class="s0">service_transition = [</span><span class="s1">&quot;service validation and testing&quot;</span><span class="s2">, </span><span class="s1">&quot;evaluation&quot;</span><span class="s2">, </span><span class="s1">&quot;transition planning and support&quot;</span><span class="s2">, </span><span class="s1">&quot;release and deployment management&quot;</span><span class="s2">, </span><span class="s1">&quot;asset and configuration management&quot;</span><span class="s2">, </span><span class="s1">&quot;knowledge management&quot;</span><span class="s2">, </span><span class="s1">&quot;change management&quot;</span><span class="s0">]</span>
+<span class="s0">service_operations = [</span><span class="s1">&quot;operations management&quot;</span><span class="s2">, </span><span class="s1">&quot;request fulfillment&quot;</span><span class="s2">, </span><span class="s1">&quot;technical management&quot;</span><span class="s2">, </span><span class="s1">&quot;problem management&quot;</span><span class="s2">, </span><span class="s1">&quot;access management&quot;</span><span class="s2">, </span><span class="s1">&quot;it operations&quot;</span><span class="s2">, </span><span class="s1">&quot;application management&quot;</span><span class="s2">, </span><span class="s1">&quot;event management&quot;</span><span class="s2">, </span><span class="s1">&quot;service desk&quot;</span><span class="s2">, </span><span class="s1">&quot;incident management&quot;</span><span class="s0">]</span>
+<span class="s0">continual_service_management = [</span><span class="s1">&quot;service management&quot;</span><span class="s2">, </span><span class="s1">&quot;service reporting&quot;</span><span class="s2">, </span><span class="s1">&quot;service improvement&quot;</span><span class="s0">]</span>
+
+<span class="s0">process_type = input(</span><span class="s1">&quot;Enter process type:&quot;</span><span class="s0">)</span>
+
+<span class="s2">if </span><span class="s0">process_type </span><span class="s2">in </span><span class="s0">process:</span>
+    <span class="s0">print(</span><span class="s1">&quot;Your process type is:&quot;</span><span class="s2">, </span><span class="s0">process_type)</span>
+    <span class="s0">your_process = input(</span><span class="s1">&quot;Confirm process:&quot;</span><span class="s0">)</span>
+    <span class="s2">if </span><span class="s0">your_process </span><span class="s2">in </span><span class="s0">service_strategy:</span>
+        <span class="s0">print(</span><span class="s1">&quot;Let's rate the maturity of your&quot;</span><span class="s2">,</span><span class="s0">your_process</span><span class="s2">,</span><span class="s1">&quot;process.&quot;</span><span class="s0">)</span>
+    <span class="s2">elif </span><span class="s0">your_process </span><span class="s2">in </span><span class="s0">service_design:</span>
+        <span class="s0">print(</span><span class="s1">&quot;Let's rate the maturity of your&quot;</span><span class="s2">,</span><span class="s0">your_process</span><span class="s2">,</span><span class="s1">&quot;process.&quot;</span><span class="s0">)</span>
+    <span class="s2">elif </span><span class="s0">your_process </span><span class="s2">in </span><span class="s0">service_transition:</span>
+        <span class="s0">print(</span><span class="s1">&quot;Let's rate the maturity of your&quot;</span><span class="s2">,</span><span class="s0">your_process</span><span class="s2">,</span><span class="s1">&quot;process.&quot;</span><span class="s0">)</span>
+    <span class="s2">elif </span><span class="s0">your_process </span><span class="s2">in </span><span class="s0">service_operations:</span>
+        <span class="s0">print(</span><span class="s1">&quot;Let's rate the maturity of your&quot;</span><span class="s2">,</span><span class="s0">your_process</span><span class="s2">,</span><span class="s1">&quot;process.&quot;</span><span class="s0">)</span>
+    <span class="s2">elif </span><span class="s0">your_process </span><span class="s2">in </span><span class="s0">continual_service_management:</span>
+        <span class="s0">print(</span><span class="s1">&quot;Let's rate the maturity of your&quot;</span><span class="s2">,</span><span class="s0">your_process</span><span class="s2">,</span><span class="s1">&quot;process.&quot;</span><span class="s0">)</span>
+    <span class="s2">else</span><span class="s0">:</span>
+        <span class="s0">print(</span><span class="s1">&quot;wack&quot;</span><span class="s0">)</span>
+<span class="s2">else</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">&quot;lame&quot;</span><span class="s0">)</span>
+<span class="s1">'''for process_type in process: 
+    if process_type in process[0]: 
+        your_process = input(&quot;Confirm process in service strategy:&quot;) 
+        print(&quot;Your process is:&quot;, your_process) 
+    elif process_type in process[1]: 
+        your_process = input(&quot;Confirm process in service design:&quot;) 
+    elif process_type in process[2]: 
+        your_process = input(&quot;Confirm process in service transition:&quot;) 
+    elif process_type == &quot;service operations&quot;: 
+        your_process = input(&quot;Confirm process in service operations:&quot;) 
+    elif process_type == &quot;continual service management&quot;: 
+       your_process = input(&quot;Confirm process in continual service management:&quot;) 
+    else: 
+       print(&quot;Invalid process!&quot;) 
+'''</span>
+<span class="s0">maturity = input(</span><span class="s1">&quot;Has the process started?:&quot;</span><span class="s0">)</span>
+<span class="s2">if </span><span class="s0">maturity == </span><span class="s1">&quot;yes&quot;</span><span class="s0">:</span>
+    <span class="s0">maturity = input(</span><span class="s1">&quot;Is the process organized?:&quot;</span><span class="s0">)</span>
+    <span class="s2">if </span><span class="s0">maturity == </span><span class="s1">&quot;yes&quot;</span><span class="s0">:</span>
+        <span class="s0">maturity = input(</span><span class="s1">&quot;Is the process dependent on the individual and allow human error?:&quot;</span><span class="s0">)</span>
+        <span class="s2">if </span><span class="s0">maturity == </span><span class="s1">&quot;yes&quot;</span><span class="s0">:</span>
+            <span class="s0">maturity = input(</span><span class="s1">&quot;Is the process completely managed and risk of failure low?:&quot;</span><span class="s0">)</span>
+            <span class="s2">if </span><span class="s0">maturity == </span><span class="s1">&quot;yes&quot;</span><span class="s0">:</span>
+                <span class="s0">maturity = input(</span><span class="s1">&quot;Is the process subject to governance control and run optimally?:&quot;</span><span class="s0">)</span>
+                <span class="s2">if </span><span class="s0">maturity == </span><span class="s1">&quot;yes&quot;</span><span class="s0">:</span>
+                    <span class="s0">print(</span><span class="s1">&quot;The maturity level is 5. All processes and functions have established strong governance.&quot;</span><span class="s0">)</span>
+                <span class="s2">else</span><span class="s0">:</span>
+                    <span class="s0">print(</span><span class="s1">&quot;The maturity level is 4. Processes are now managing qualitatively.&quot;</span><span class="s0">)</span>
+            <span class="s2">else</span><span class="s0">:</span>
+                <span class="s0">print(</span><span class="s1">&quot;The maturity level is 3. Processes are defined and documented, but not yet managed.&quot;</span><span class="s0">)</span>
+        <span class="s2">else</span><span class="s0">:</span>
+            <span class="s0">print(</span><span class="s1">&quot;The maturity level is 2. Processes using project-based approach, but not defined.&quot;</span><span class="s0">)</span>
+    <span class="s2">else</span><span class="s0">:</span>
+        <span class="s0">print(</span><span class="s1">&quot;The maturity level is 1. Processes are unorganized and not useful.&quot;</span><span class="s0">)</span>
+<span class="s2">else</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">&quot;The maturity level is 0. Processes are non-existent.&quot;</span><span class="s0">)</span>
+</pre>
+</body>
+</html>
